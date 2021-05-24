@@ -113,8 +113,6 @@ oc expose svc/${APP_NAME}
                         openshift.tag("${DEV_PROJECT}/books:latest", "${STAGE_PROJECT}/books:stage")
                     }
                 }
-                    }
-                }
             }
         }
 
@@ -153,12 +151,12 @@ oc expose svc/${APP_NAME}
                             }
                         }
                             }
-                        }
+                        
 
                         echo "Deployment to Staging env is complete. Access the app at the URL http://${routeHost}."
                     }
                 }
             }
         }
-    }
+    
 }
